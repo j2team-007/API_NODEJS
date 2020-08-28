@@ -5,6 +5,10 @@ const User = new Schema({
     name: String,
     email: String,
     password: String,
+    Desk: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Desks',
+    }],
     date: { type: Date, default: Date.now },
 });
 

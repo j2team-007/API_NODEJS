@@ -10,4 +10,8 @@ router.post('/register', ValidatorController.register);
 
 router.post('/login', ValidatorController.login);
 
+router.post('/:idUser/Desk', ValidatorController.createDeskUser);
+
+router.get('/:idUser/Desk', ValidatorController.getDeskUser);
+
 module.exports = router;
